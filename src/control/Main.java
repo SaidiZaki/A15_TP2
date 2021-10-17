@@ -1,5 +1,6 @@
 package control;
 
+import utils.Artiste;
 import utils.Categorie;
 import utils.ClientUtils;
 import utils.Commande;
@@ -14,6 +15,14 @@ public class Main {
         System.out.println("_________________________________________________________");
         System.out.println( "Liste des Commandes: " + "\n "+allOrder + "\n" + "Liste de Commande du client 20: " + "\n"+commandesClient );
         System.out.println("_________________________________________________________");
+        
+        //*******************ARTISTE**************************
+         String allArtistes = Artiste.getAllArtistes();
+        String artiste = Artiste.getArtisteByID();
+        System.out.println("*********************************************************");
+        System.out.println( "Liste des Artistes: " + "\n "+allArtistes + "\n" + "Detail Artiste avec Id = 40: " + "\n"+artiste );
+        System.out.println("*********************************************************");
+        
         
         //------- Client --------------\\
         String allClients = ClientUtils.getClients();
