@@ -21,8 +21,6 @@ public class Commande {
         return response;
     }
 
-    
-    
-    
+
     
 }

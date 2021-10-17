@@ -5,6 +5,8 @@
  */
 package utils;
 
+import org.apache.http.client.utils.URIBuilder;
+
 /**
  *
  * @author adams

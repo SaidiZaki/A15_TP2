@@ -1,5 +1,6 @@
 package control;
 
+import utils.Categorie;
 import utils.ClientUtils;
 import utils.Commande;
 
