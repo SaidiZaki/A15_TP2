@@ -20,6 +20,15 @@ public class Main {
         System.out.println("*********************************************************");
         System.out.println( "Liste des Clients: " + "\n "+allClients + "\n" + "Details du client 60: " + "\n"+client );
         System.out.println("*********************************************************");
+        
+        //------ Categorie--------------\\
+        String allCategorie = Categorie.getCategorie();
+        String categorie = Categorie.getCategorieDetail();
+        System.out.println("*********************************************************");
+        System.out.println( "Liste des Categories: " + "\n "+allCategorie + "\n" + "Detail de la categirie 1006: " + "\n"+categorie );
+        System.out.println("*********************************************************");
+        
+            
     }
 
 }
