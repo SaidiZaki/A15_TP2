@@ -13,9 +13,10 @@ public class Commande {
         return response;
     }
     
-    public static String getCommandeClient() {
+    public static String getCommandeClient(String idClient) {
         URIBuilder builder = Utils.setHostScheme();
-        builder.setPath("/A15-TP-Partie-1/galerieArt/commande/clientCommandes&20");
+        String path ="/A15-TP-Partie-1/galerieArt/commande/clientCommandes&"+idClient;
+        builder.setPath(path);
         
         String response = Utils.recupererResponse(builder);
         return response;

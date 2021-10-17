@@ -14,10 +14,11 @@ public class ClientUtils {
         return response;
     }
     
-    public static String getClientDetails(){
+    public static String getClientDetails(String idClient){
         
         URIBuilder builder = Utils.setHostScheme();
-        builder.setPath("/A15-TP-Partie-1/galerieArt/clients/singleClient&60");
+        String path="/A15-TP-Partie-1/galerieArt/clients/singleClient&"+idClient;
+        builder.setPath(path);
         
         String response = Utils.recupererResponse(builder);
         return response;

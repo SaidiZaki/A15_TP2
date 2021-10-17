@@ -14,9 +14,10 @@ public class Categorie {
         return response;
      } 
      
-     public static String getCategorieDetail() {
+     public static String getCategorieDetail(String idCategorie) {
         URIBuilder builder = Utils.setHostScheme();
-        builder.setPath("/A15-TP-Partie-1/galerieArt/categorie/singleCategorie&1006");
+        String path = "/A15-TP-Partie-1/galerieArt/categorie/singleCategorie&"+idCategorie; 
+        builder.setPath(path);
         
         String response = Utils.recupererResponse(builder);
         return response;

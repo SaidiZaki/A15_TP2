@@ -11,9 +11,10 @@ public class Artiste {
         return response;
     }
     
-     public static String getArtisteByID() {
+     public static String getArtisteByID(String idArtiste) {
         URIBuilder builder = Utils.setHostScheme();
-        builder.setPath("/A15-TP-Partie-1/galerieArt/artiste/singleArtiste&40");
+        String path= "/A15-TP-Partie-1/galerieArt/artiste/singleArtiste&"+idArtiste;
+        builder.setPath(path);
         String response = Utils.recupererResponse(builder);
         return response;
     }
